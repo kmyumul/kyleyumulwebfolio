@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(203, 203, 203);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: darkslategray;
+    color: white;
+}
+
+.headerbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+.name {
+    font-size: 44px;
+    width: 280px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    margin: 0;
+}
+
+.header-space {
+    background-color: black;
+    color: black;
+    flex: 1
+}
+
+.theme-toggle {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    font-size: 1rem;
+}
+
+.theme-container {
+    font-size: 24px;
+    width: 180px;
+    justify-content: right;
+    align-content: right;
+    background-color: black;
+    color: white;
+    padding-top: 24px;;
+}
+
+.navigation-bar {
+    position: sticky;
+    top: 71px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px 16px 0;
+}
+
+.nav-about, .nav-education, .nav-projects, .nav-contact {
+    color: white; 
+    text-decoration: none; 
+    padding: 6px 10px 0 10px;
+}
+
+.nav-about:hover, .nav-education:hover, .nav-projects:hover, .nav-contact:hover {
+    text-shadow: 0 2px 4px;
+}
+
+section {
+    padding: 10px;
+    margin: 1rem 0;
+}
+
+.about, .education {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-writing, .education-writing, .projects-writing, .contact-writing {
+    margin-top: 10px;
+    flex: 1
+}
+
+.about-header, .education-header, .projects-header, .contact-header {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 34px;
+}
+
+.about-text, .education-text, .projects-text, .contact-text {
+    font-size: 20px;
+    line-height: 38px;
+}
+    
+
+.about{
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 50px;
+    padding-bottom: 16px;
+
+}
+
+.education, .projects, .contact {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+}
+
+.projects {
+    margin-bottom: 1rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
